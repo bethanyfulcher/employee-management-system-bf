@@ -188,14 +188,13 @@ function addEmployee() {
                         first_name: answers.firstName,
                         last_name: answers.lastName,
                         role_id: answers.role
-                    }
-                ), function (err, res) {
+                    }, function (err, res) {
                     if (err) throw err
                     else {
-                        console.log(res)
                         runTracker()
                     }
                 }
+                )
             })
         }
     }
